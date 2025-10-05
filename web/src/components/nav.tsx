@@ -2,16 +2,18 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Users, Truck, AlertTriangle, FileText, Camera } from 'lucide-react';
+import { Home, Users, Truck, AlertTriangle, FileText, Camera, Sparkles, Activity } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/', label: 'Dashboard', icon: Home },
+  { href: '/site-agent', label: 'Site Agent', icon: Activity },
   { href: '/camera', label: 'Camera', icon: Camera },
   { href: '/people', label: 'People', icon: Users },
   { href: '/machines', label: 'Machines', icon: Truck },
   { href: '/alerts', label: 'Alerts', icon: AlertTriangle },
   { href: '/tickets', label: 'Tickets', icon: FileText },
+  { href: '/chat', label: 'AI Assistant', icon: Sparkles },
 ];
 
 export function Nav() {

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Nav } from '@/components/nav';
+import { ChatWidget } from '@/components/chat-widget';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           <Nav />
           <main className="flex-1 p-8">{children}</main>
         </div>
+        <ChatWidget />
       </body>
     </html>
   );
