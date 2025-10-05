@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "label": "truck",
+    "status": "active",
+    "last_seen": null,
+    "location": null
+  },
+  {
+    "id": 2,
+    "label": "car",
+    "status": "active",
+    "last_seen": null,
+    "location": null
+  },
+  {
+    "id": 3,
+    "label": "bus",
+    "status": "idle",
+    "last_seen": null,
+    "location": null
+  }
+]

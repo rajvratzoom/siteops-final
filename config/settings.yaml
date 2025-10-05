@@ -1,0 +1,30 @@
+video_source: 0
+width: 1280
+height: 720
+target_fps: 20
+device: "cpu"
+
+proximity:
+  pixel_threshold: 200  # Pixel distance threshold for "too close"
+  min_duration_s: 2.0
+  cooldown_s: 5.0
+
+fall:
+  enabled: true
+  min_duration_s: 1.5  # Person must be down for this long before alerting
+  aspect_ratio_threshold: 1.5  # Detects when height/width < (1/threshold), i.e., lying down
+
+classes:
+  person: 0
+  vehicle_labels: ["truck", "car", "bus", "motorcycle", "bicycle"]
+
+tracking:
+  max_age: 30
+  min_hits: 3
+  iou_threshold: 0.3
+
+overlay:
+  show_depth: true
+  show_fps: true
+  show_ids: true
+  depth_thumbnail_size: 200
